@@ -1,0 +1,48 @@
+@import '../_variables';
+
+.footer {
+    h2 {
+        font-weight: $weight-bold;
+        font-size: 30px;
+        text-align: $Pleft;
+        color: $black;
+        margin-left: $margin60;
+        margin-top: $margin30;
+        margin-bottom: $margin30;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: left;
+        color: $black;
+        margin-left: $margin60;
+        margin-top: $margin30;
+        margin-bottom: $margin30;
+    }
+
+    div {
+        flex: 1;
+        margin: 10px;
+        text-align: $Pcenter;
+    }
+}
+
+.contenedor-map iframe {
+    @include width320{
+        width: 260px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+.iconos-footer i {
+    font-size: 40px;
+    padding: $margin10;
+    color: $black;
+    margin-left: $margin20;
+    text-align: $Pright;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

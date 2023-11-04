@@ -1,0 +1,375 @@
+/*CSS Novedades, invierno e iconos*/
+:is(.texto-invierno, .texto-novedades, .texto-iconos){
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+:is(.card-novedades, .card-invierno, .card-iconos) h3,h4{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+:is(.card-novedades, .card-invierno, .card-iconos) h3{
+    font-size: 25px;
+}
+
+:is(.card-novedades, .card-invierno, .card-iconos) h4{
+    font-size: 20px;
+}
+
+/*Comienzo CSS Marcas*/
+.texto-marcas{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+/*Fin CSS Marcas*/
+
+/*Comienzo CSS Entrenamiento*/
+.texto-entrenamiento{/*Atributos del texto*/
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+/*Fin CSS Entrenamiento*/
+/*Fin CSS Index.html*/
+
+/*Comienzo CSS Accesorios.html*/
+/*Comienzo CSS Destacados.html*/
+.contenedor-elementos{
+    padding: 20px;
+}
+
+.texto-destacados{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filtros button {
+    display: none;
+    margin-bottom: 10px;
+}
+
+:is(.filtros) label, h2{
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+.filtros label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filtros h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.filtros hr {
+    margin: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.contenedor-accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+:is(.card-accesorios-destacados) h3,h4{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.card-accesorios-destacados h3{
+    font-size: 25px;
+}
+
+.card-accesorios-destacados h4{
+    font-size: 20px;
+}
+/*Fin CSS Accesorios.html*/
+/*Fin CSS Destacados.html*/
+
+/*Comienzo CSS Suscribete.html*/
+:is(.texto-datos, .texto-registro, .texto-beneficios){
+    font-weight: bold;
+    font-size: 40px;
+    color: black; 
+}
+
+.texto-registro{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.texto-datos{
+    text-align: left;
+}
+
+:is(.boton-facebook, .boton-google, .boton-registro){
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    border-radius: 4px;
+    border: 3px solid black;
+}
+.boton-facebook{
+    background-color: #4267B2;
+}
+
+.boton-google{
+    background-color: #DB4437;
+}
+
+.boton-registro{
+    background-color: white;
+}
+
+:is(.datos,.datos::placeholder,.sexo){
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.datos{
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.datos::placeholder{
+    color: black;
+    text-align: left;
+}
+
+.registro .check{
+    text-align: left;
+}
+
+.registro-izq{
+    padding: 20px;
+}
+
+.texto-beneficios{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sexo{
+    color: black;
+}
+
+.parrafo-beneficios{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+:is(.informacion, .texto-condiciones){
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+}
+/*Fin CSS Suscribete.html*/
+
+/*Comienzo CSS lista de deseos.html*/
+/*Comienzo CSS Mi lista de deseos*/
+.texto-lista-de-deseos{/*Atributos del texto*/
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+:is(.card-producto-recomendado, .card-lista-deseo) h3,h4{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+:is(.card-producto-recomendado, .card-lista-deseo) h3{
+    font-size: 25px;
+}
+
+:is(.card-producto-recomendado, .card-lista-deseo) h4{
+    font-size: 20px;
+}
+/*Fin CSS Productos recomendados*/
+/*Fin CSS Mi lista de deseos*/
+
+/*Comienzo CSS tu-carrito.html*/
+.carrito-izquierda {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contenedor-pago {
+    flex: 1;
+}
+
+.carrito-compras{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+    color: black;
+}
+
+:is(.informacion-carrito, .carrito-compras-informacion){
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    color: gray; 
+}
+
+.card-compra p{
+    font-weight: bold;
+    font-size: 20px;
+    color: gray; 
+}
+
+:is(.texto-resumen, .texto-codigo, .texto-opciones-de-pago){
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    color: black;
+    margin-top: 20px;
+}
+
+.resumen-de-la-compra{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    color: gray; 
+}
+
+.codigo-promocional{
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.boton-pago {
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    border-radius: 4px;
+    border: 3px solid black;
+}
+
+.boton-pago img:hover{
+    cursor: pointer;
+}
+
+.card-compra{
+    display: flex;
+    border: 2px solid black;
+    width: 500px;
+    height: 250px;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+:is(.card-compra, .card-recomendado-carrito) h3,h4{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+:is(.card-compra, .card-recomendado-carrito) h3{
+    font-size: 25px;
+}
+
+:is(.card-compra, .card-recomendado-carrito) h4{
+    font-size: 20px;
+}
+
+:is(.card-compra, .card-recomendado-carrito) img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contenedor-metodos-de-pago i{
+    font-size: 50px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+}
+
+.contenedor-metodos-de-pago i:hover{
+    transform: scale(1.1);
+}
+/*Fin CSS tu-carrito.html*/
+
+/*Comienzo CSS niños.html*/
+.texto-menu-rapido{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin-top: -10px;
+}
+
+.texto-altapinta{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+:is(.card-coleccion-altapinta, .card-recientes) h3,h4{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+:is(.card-coleccion-altapinta, .card-recientes) h3{
+    font-size: 25px;
+}
+
+:is(.card-coleccion-altapinta, .card-recientes) h4{
+    font-size: 20px;
+}
+/*Fin CSS MiniOldCollection*/
+
+/*  white= #f5f5f5
+    light= #e0c9cb
+    tan= #c3a1a0
+    pink= #d9aab7
+    rose= #ba7e7e
+    dark= #4e4e4e
+*/

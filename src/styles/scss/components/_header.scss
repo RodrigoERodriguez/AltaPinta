@@ -1,0 +1,77 @@
+@import '../_variables';
+
+.navbar-toggler {
+    background-color: $black !important;
+}
+
+.navbar-brand {
+    padding: $margin10;
+    height: 85px;
+    width: auto;
+    transition: all 0.3;
+
+    &:hover {
+    transform: scale(1.2);
+    }
+}
+
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    font-size: $margin20;
+    font-weight: $weight-bold;
+    color: $black !important;
+    text-decoration: none;
+    padding: $margin10;
+    margin: $margin10;
+}
+
+.nav-item :hover {
+    transform: scale(1.1);
+    color: $black;
+    background-color: $orangealtapinta;
+    border-radius: $margin5;
+}
+
+.contenedor-buscador {
+    input {
+        height: $margin50;
+        width: 200px;
+        font-size: 20px;
+        font-weight: $weight-bold;
+        border: 1px solid $black;
+        border-radius: 4px 4px 4px 4px;
+        margin-right: $margin30;
+    }
+
+    button {
+        background-color: $orangealtapinta !important;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+        font-weight: $weight-bold;
+        color: $black;
+        border: 1px solid $black;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.iconos-header i {
+    font-size: 30px;
+    padding: 10px;
+    color: $black;
+    margin-left: $margin20;
+
+    @include width320{
+        font-size: 25px;
+        margin-left: 90px;
+    }
+
+    &:hover {
+    transform: scale(1.1);
+    }
+}

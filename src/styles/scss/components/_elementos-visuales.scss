@@ -1,0 +1,95 @@
+@import '../_variables';
+
+.contenedor-suscribete {
+    background-color: $greenaltapinta;
+}
+
+.contenedor-elementos{
+    padding: $margin20;
+}
+
+.filtros {
+    button {
+        display: none;
+        margin-bottom: $margin10;
+    }
+
+    hr {
+        margin: $margin10 0;
+        border-top: 1px solid $white;
+    }
+}
+
+.formulario-registro{
+    margin-bottom: 30px;
+}
+
+.contenedor-accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carrito-izquierda {
+    flex: 1;
+    padding-right: $margin20;
+}
+
+.contenedor-pago {
+    flex: 1;
+}
+
+.carrito-compras{
+    font-weight: $weight-bold;
+    font-size: 35px;
+    text-align: $Pleft;
+    color: $black;
+}
+
+.contenedor-metodos-de-pago i {
+    font-size: 50px;
+    padding: $margin10;
+    color: $black;
+    margin-left: $margin20;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.texto-banner {
+    font-family: $fontprompt;
+    font-size: 700;
+    font-weight: $weight-bold;
+    text-align: $Pcenter;
+    color: $white;
+
+    .link {
+        font-size: 700;
+        font-weight: $weight-bold;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.contenedor-suscribete .texto-banner .link:hover {
+    color: $orangealtapinta;
+}
+
+.wsp {
+    height: 40px;
+    width: 40px;
+    background-color: $greenwhatsapp;
+    color: $white;
+    position: fixed;
+    right: $margin40;
+    bottom: $margin40;
+    text-align: $Pcenter;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: $size-info;
+
+    a {
+        color: $white
+    }
+}

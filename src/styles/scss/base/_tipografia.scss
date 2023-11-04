@@ -1,0 +1,244 @@
+@import '../variables';
+
+.texto-novedades{
+    text-align: center;
+    margin-top: 30px;
+}
+
+:is(.texto-invierno, .texto-iconos, .texto-productos-recomendados) {
+    font-family: $fontraleway;
+    font-size: $size-title;
+    text-align: $Pleft;
+    color: $black;
+    margin-top: $margin30;
+    margin-bottom: 30px;
+    margin-top: 100px;
+
+    @include width1200{
+        text-align: center;
+    }
+}
+
+:is(.card-novedades, .card-invierno, .card-iconos, .card-accesorios-destacados, .texto-datos, .texto-registro, .texto-beneficios, .card-producto-recomendado, .card-lista-deseo, .card-compra, .card-recomendado-carrito, .card-coleccion-altapinta, .card-recientes, .card-productos-recomendados) h3, h4 {
+    text-align: $Pcenter;
+    color: $black;
+}
+
+:is(.card-novedades, .card-invierno, .card-iconos, .card-coleccion-altapinta, .card-recientes, .card-compra, .card-recomendado-carrito, .card-producto-recomendado, .card-lista-deseo, .card-accesorios-destacados, .card-productos-recomendados) {
+    h3 {
+        font-size: $size-info;
+        margin-top: 12px;
+
+        @include width1200{
+            text-align: center;
+        }
+    }
+
+    h4 {
+        font-size: 15px;
+        color: $gray;
+        margin-top: -10px;
+
+        @include width1200{
+            text-align: center;
+        }
+    }
+}
+
+.class-titulo-disenio{
+    font-size: $size-title;
+    text-align: $Pcenter;
+    color: $black;
+}
+
+.texto-marcas {
+    font-family: $fontraleway;
+    margin-top: $margin30;
+    text-align: center;
+}
+
+.texto-entrenamiento {
+    font-family: $fontraleway;
+    font-size: 35px;
+    text-align: $Pcenter;
+    color: $black;
+    margin-top: $margin60;
+    margin-bottom: $margin40;
+
+    @include width1200{
+        text-align: center;
+    }
+
+    @include width320{
+        font-size: 25px;
+        text-align: $Pcenter;
+    }
+}
+
+.texto-destacados {
+    @extend .class-titulo-disenio;
+    margin-top: $margin20;
+    margin-bottom: $margin20;
+    margin-bottom: 70px;
+}
+
+:is(.filtros) label, h2 {
+    font-family: $fontraleway;
+    text-align: $Pleft;
+    color: $black;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.filtros {
+    label {
+        font-size: 15px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-top: $margin30;
+        margin-bottom: 0px;
+    }
+}
+
+.texto-registro {
+    font-family: $fontprompt;
+    text-align: $Pcenter;
+    margin-top: $margin40;
+    margin-bottom: $margin40;
+
+    @include width320{
+        text-align: center;
+    }
+}
+
+.texto-datos {
+    text-align: $Pleft;
+
+    @include width320{
+        text-align: center;
+    }
+}
+
+.datos{
+    margin-bottom: $margin20;
+    background-color: $white;
+    border: 2px solid $black;
+    border-radius: 4px;
+    padding: $margin10;
+
+    @include width320{
+        text-align: center;
+    }
+}
+
+.texto-beneficios{
+    text-align: $Pcenter;
+    margin-top: $margin40;
+    margin-bottom: $margin40;
+    text-align: $Pcenter;
+    font-size: 45px;
+
+    @include width320{
+        text-align: center;
+    }
+}
+
+.parrafo-beneficios {
+    font-size: 15px;
+    text-align: $Pcenter;
+    color: $gray;
+    margin-top: $margin40;
+    margin-bottom: $margin40;
+    text-align: $Pcenter;
+
+    @include width320{
+        width: 300px;
+        text-align: center;
+    }
+}
+
+:is(.informacion, .texto-condiciones) {
+    font-weight: $weight-bold;
+    font-size: 15px;
+    color: $gray;
+    text-align: $Pleft;
+}
+
+.texto-lista-de-deseos {
+    font-size: $size-title;
+    text-align: $Pleft;
+    color: $black;
+    margin-top: $size-title;
+    margin-bottom: $margin20;
+}
+
+.carrito-compras{
+    margin-top: 20px;
+}
+
+:is(.informacion-carrito, .carrito-compras-informacion) {
+    display: block;
+    text-align: $Pleft;
+    color: $gray;
+    font-size: 20px;
+}
+
+.card-compra p {
+    margin-top: 30px;
+    font-size: $size-info;
+    color: $gray;
+    display: flex;
+
+    @include width320{
+        font-size: 20px;
+        margin-top: 200px;
+        margin-left: -200px;
+    }
+}
+
+:is(.texto-resumen, .texto-codigo, .texto-opciones-de-pago) {
+    font-weight: $weight-bold;
+    font-size: 30px;
+    text-align: $Pleft;
+    color: black;
+    margin-top: $margin20;
+    margin-bottom: $margin20;
+}
+
+.resumen-de-la-compra {
+    font-size: 15px;
+    text-align: $Pleft;
+    color: $gray;
+}
+
+.texto-menu-rapido {
+    @extend .class-titulo-disenio;
+    font-size: 40px !important;
+    font-family: $fontraleway;
+    margin-top: 5px;
+}
+
+.texto-altapinta {
+    font-size: $size-title;
+    text-align: $Pleft;
+    color: $black;
+    margin-top: $margin20;
+    margin-bottom: $margin20;
+
+    @include width1200{
+        text-align: center;
+    }
+
+    @include width320{
+        font-size: 25px;
+        text-align: $Pcenter;
+    }
+}
+
+.registro .check{
+    text-align: $Pleft;
+}

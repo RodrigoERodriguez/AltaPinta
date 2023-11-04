@@ -1,0 +1,213 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+    
+p{
+    font-size: 15px;
+    color: #4e4e4e;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    font-weight: bold;
+
+    @include width320{
+        font-size: 15px;
+        text-align: left;
+        margin-left: 50px;
+    }
+}
+
+.image-and-size{
+    flex-direction: column;
+    justify-content: space-between;
+
+    .imagen-bolsos{
+
+        @include width320{
+            width: 300px;
+            height: 300px;
+            margin-left: 30px;
+        }
+    }
+
+    & img{
+    width: $width-secondary;
+
+        @include width320{
+            width: 375px;
+            height: 400px;
+        }
+
+    }
+
+    & .pick{
+        text-transform: uppercase;
+    }
+
+    & .sizes-one{
+        display: flex;
+        justify-content: flex-start;
+        gap: 1px;
+        font-weight: bold;
+        margin-bottom: 50px;
+
+        @include width320{
+            margin-left: 50px;
+        }
+
+        & span{
+            border: 1px solid black;
+            width: 60px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 12px;
+            cursor: pointer;
+
+            &:hover{
+                background: $orangealtapinta;
+                color: #f5f5f5;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        & .focus{
+            background-color: $orangealtapinta;
+            color: #f5f5f5;
+        }
+    }
+
+    & .sizes {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1px;
+        font-weight: bold;
+        margin-bottom: 50px;
+
+        @include width320{
+            margin-left: 50px;
+        }
+
+        & span{
+            border: 1px solid black;
+            width: 50px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 12px;
+            cursor: pointer;
+
+            @include width320{
+                width: 40px;
+                height: 30px;
+                font-size: 15px;
+                text-align: left;
+            }
+
+            &:hover{
+                background: $orangealtapinta;
+                color: #f5f5f5;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        & .focus{
+            background-color: $orangealtapinta;
+            color: #f5f5f5;
+        }
+    }
+}
+
+.product{
+    flex-direction: column;
+    justify-content: space-between;
+
+    & p{
+        text-transform: uppercase;
+
+        @include width320{
+            width: 250px;
+        }
+    }
+
+    & h2{
+        font-size: 20px;
+        color: $black;
+        margin-top: -5px;
+        font-weight: bold;
+
+        @include width320{
+            font-size: 15px;
+            text-align: left;
+            margin-left: 50px;
+        }
+    }
+
+    & h3{
+        color: $black;
+        margin-top: -5px;
+        font-weight: bold;
+
+        @include width320{
+            font-size: 15px;
+            text-align: left;
+            margin-left: 50px;
+        }
+    }
+
+    & .description{
+        text-transform: none;
+        letter-spacing: 0;
+        margin-bottom: 17px;
+        color: #4e4e4e;
+        font-size: 12px;
+        line-height: 26px;
+        text-align: justify;
+
+        @include width320{
+            margin-top: 20px;
+            text-align: left;
+            width: 300px;
+        }
+    }
+
+    & button{
+        background-color: $orangealtapinta;
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        border-radius: 2px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #f5f5f5;
+        font-weight: bold;
+
+        @include width320{
+            margin-left: 50px;
+            margin-right: 90px;
+            margin-bottom: 20px;
+        }
+
+        &:hover{
+            color: black;
+            transition: all 0.5s ease-in-out;
+        }
+
+        & .add{
+            width: 67%;
+        }
+
+        & .like{
+            width: 22%;
+        }
+    }
+}

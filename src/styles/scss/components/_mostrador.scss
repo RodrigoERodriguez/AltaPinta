@@ -1,0 +1,239 @@
+@import '../_variables';
+
+.contenedor-video{
+    background-image: url('../../assets/alta-pinta/BackGround-Video.jpg');
+    height: $width-primary;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-promocional {
+    display: grid;
+    justify-content: $Pcenter;
+    align-items: $Pcenter;
+    height: $width-primary;
+    margin-bottom: $margin50;
+}
+
+.class-compartida{
+    width: $width-primary;
+    height: $height-primary;
+    text-align: $Pcenter;
+    border-radius: $margin10;
+}
+
+.class-compartida-visual{
+    height: $height-secondary;
+    width: $img-width;
+    border-radius: 6px; 
+}
+
+.class-hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+:is(.card-novedades, .card-invierno, .card-iconos) {
+    @extend .class-compartida;
+
+    @include width1200{
+        width: 300px;
+        height: 400px;
+    }
+
+    @include width922{
+        width: 330px;
+        height: 400px;
+    }
+
+    img {
+        @extend .class-compartida-visual;
+    }
+}
+
+.marcas {
+    height: 90px;
+    width: $img-width;
+    padding: 0 $margin50;
+    margin-top: 35px;
+    margin-bottom: $margin60;
+
+    @include width1200{
+        height: 70px;
+    }
+
+    @include width922{
+        height: 200px;
+        width: $img-width;
+    }
+
+    &:hover {
+        @extend .class-hover;
+    }
+}
+
+.card-entrenamiento{
+    width: auto;
+    height: auto;
+    text-align: $Pcenter;
+    border-radius: $margin10;
+
+    img{
+        height: $width-secondary;
+        width: $img-width;
+        padding: 0 $margin50;
+        margin-bottom: $margin40;
+
+        @include width922{
+            height: 350px;
+            width: 420px;
+        }
+
+        @include width320{
+            height: 350px;
+            width: 420px;
+        }
+    }
+}
+
+.card-accesorios-destacados {
+    width: $width-secondary;
+    height: $height-primary;
+    text-align: $Pcenter;
+    border-radius: $margin10;
+
+    @include width1200{
+        width: 400px;
+        height: 320px;
+    }
+
+    @include width576{
+        margin-top: 30px;
+    }
+
+    @include width320{
+        height: 350px;
+        width: 300px;
+    }
+
+    img {
+        height: $height-secondary;
+        width: auto;
+        border-radius: 6px;
+    }
+
+    &:hover {
+        @extend .class-hover;
+    }
+}
+
+:is(.card-producto-recomendado, .card-lista-deseo) {
+    @extend .class-compartida;
+    
+    img {
+        @extend .class-compartida-visual;
+    }
+}
+
+:is(.lista-deseo , .producto-recomendado) img:hover {
+    @extend .class-hover;
+}
+
+.card-compra{
+    display: flex;
+    border: 2px solid $black;
+    width: $width-secondary;
+    height: $height-secondary;
+    text-align: $Pleft;
+    border-radius: $margin10;
+    margin-top: $margin30;
+
+    @include width320{
+        width: 290px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+:is(.card-novedades, .card-invierno, .card-iconos,.card-entrenamiento, .card-compra, .card-recomendado-carrito, .card-coleccion-altapinta, .card-recientes, .card-menu-rapido, .card-menu-rapido-mujer, .card-recomendado-carrito, .menu-rapido-nino, .menu-rapido-mujer) img:hover{
+    @extend .class-hover;
+}
+
+.card-recomendado-carrito{
+    @extend .class-compartida;
+
+    @include width1200{
+        width: 300px;
+        height: 400px;
+    }
+
+    @include width922{
+        width: 330px;
+        height: 400px;
+    }
+
+    img {
+        @extend .class-compartida-visual;
+    }
+}
+
+.contenedor-recomendados-carrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card-compra img, .card-recomendado-carrito img {
+    height: $height-secondary;
+    width: $img-width;
+    border-radius: 6px;
+    padding: $margin20;
+
+    img {
+        @extend .class-compartida-visual;
+    }
+}
+
+:is(.card-menu-rapido, .card-coleccion-altapinta, .card-recientes){
+    @extend .class-compartida;
+    margin-top: 90px;
+
+    @include width1200{
+        width: 300px;
+        height: 400px;
+    }
+
+    @include width922{
+        width: 900px;
+        height: 400px;
+    }
+
+    img {
+        @extend .class-compartida-visual;
+    }
+}
+
+.card-menu-rapido-mujer {
+    width: 300px;
+    height: $height-primary;
+    text-align: $Pcenter;
+    border-radius: $margin10;
+    margin-top: 90px;
+
+    @include width1200{
+        width: 255px;
+        height: 400px;
+    }
+
+    @include width922{
+        width: 360px;
+        height: 400px;
+    }
+}
+
+:is(.card-menu-rapido-mujer) img {
+    height: $height-secondary;
+    width: $img-width;
+    border-radius: 6px;
+}

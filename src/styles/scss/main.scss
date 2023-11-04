@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+//Variables
+@import 'variables';
+
+//LAYOUTS
+@import 'layouts/_querys';
+
+//BASE
+@import 'base/_tipografia';
+@import 'base/_base';
+
+//COMPONENTS
+@import 'components/_botones';
+@import 'components/_elementos-visuales';
+@import 'components/_footer';
+@import 'components/_header';
+@import 'components/_mostrador';
+@import 'components/_productos';
